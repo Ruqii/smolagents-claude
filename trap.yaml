@@ -3,7 +3,7 @@ tasks:
     solution: smolagents-claude-v2
     description: smolagents CodeAgent with PDF vision tool + Python interpreter
     cmd: uv run python solution.py
-    traptask: ../trapstreet-tasks/tasks/pdf_reader
+    traptask: ../../trapstreet-tasks/tasks/pdf_reader
     # Agent loops multiple LLM calls per case (1 vision read + N planning steps);
     # bump well above claude-pdf's 600 to absorb retries on long scenario questions.
     timeout: 1200
